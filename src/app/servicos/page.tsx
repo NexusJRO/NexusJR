@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import {
   Code,
   Database,
@@ -13,6 +15,7 @@ import {
 import ContactModal from "@/components/ContactModal";
 
 export default function FullServicesPage() {
+  const [isLoading, setIsLoading] = useState(true);
   const services = [
     {
       icon: Code,
@@ -128,6 +131,27 @@ export default function FullServicesPage() {
     },
   ];
 
+  useEffect(() => {
+    // Simula um delay de carregamento de 1 segundo
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    // Limpa o timer se o componente for desmontado
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen bg-gradient-to-br from-gray-50 to-white">
+        <div className="animate-pulse">
+          <div className="h-12 w-64 bg-gray-200 rounded mb-4"></div>
+          <div className="h-6 w-96 bg-gray-200 rounded"></div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -190,7 +214,6 @@ export default function FullServicesPage() {
           ))}
         </div>
 
-        {/* Adiciona um contêiner para centralizar e espaçar o botão */}
         <div className="flex justify-center mt-16">
           <ContactModal />
         </div>
