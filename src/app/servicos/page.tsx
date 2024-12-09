@@ -132,9 +132,19 @@ export default function FullServicesPage() {
   ];
 
   useEffect(() => {
-    // Simula um delay de carregamento de 1 segundo
+    // Vibrate the device when the page loads
+    const vibrateOnLoad = () => {
+      // Check if vibration is supported
+      if ("vibrate" in navigator) {
+        // Vibrate for 500 milliseconds
+        navigator.vibrate(500);
+      }
+    };
+
+    // Simulate loading delay and vibrate
     const timer = setTimeout(() => {
       setIsLoading(false);
+      vibrateOnLoad();
     }, 1000);
 
     // Limpa o timer se o componente for desmontado
