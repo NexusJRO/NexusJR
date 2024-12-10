@@ -132,19 +132,9 @@ export default function FullServicesPage() {
   ];
 
   useEffect(() => {
-    // Vibrate the device when the page loads
-    const vibrateOnLoad = () => {
-      // Check if vibration is supported
-      if ("vibrate" in navigator) {
-        // Vibrate for 500 milliseconds
-        navigator.vibrate(500);
-      }
-    };
-
-    // Simulate loading delay and vibrate
+    // Simula um delay de carregamento de 1 segundo
     const timer = setTimeout(() => {
       setIsLoading(false);
-      vibrateOnLoad();
     }, 1000);
 
     // Limpa o timer se o componente for desmontado
@@ -167,7 +157,8 @@ export default function FullServicesPage() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-            Nossos Serviços Completos
+            Nossos{" "}
+            <span className="text-blue-500 animate-text-shimmer">Serviços</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Soluções tecnológicas abrangentes que transformam desafios em

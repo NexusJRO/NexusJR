@@ -63,7 +63,7 @@ export default function HeroSection() {
         <div className="space-y-6 text-center md:text-left">
           {/* Animated Intro */}
           <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-            <span className="w-10 h-1 bg-primary-500 rounded-full"></span>
+            <span className="w-10 h-1 bg-blue-500 rounded-full"></span>
             <p className="text-white text-lg tracking-wide">
               Tech excellence always
             </p>
@@ -71,8 +71,7 @@ export default function HeroSection() {
 
           {/* Headline with Dynamic Emphasis */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Nexus{" "}
-            <span className="text-primary-500 animate-text-shimmer">JR</span>
+            Nexus <span className="text-blue-500 animate-text-shimmer">JR</span>
           </h1>
 
           {/* Descriptive Subtext */}
@@ -85,8 +84,8 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center gap-6 justify-center md:justify-start">
             <button
               className="group relative px-8 py-3 rounded-lg 
-                bg-primary-500 text-white font-semibold
-                hover:bg-primary-600 transition-all duration-300
+                bg-blue-500 text-white font-semibold
+                hover:bg-blue-600 transition-all duration-300
                 shadow-lg hover:shadow-xl
                 flex items-center gap-3
                 active:scale-95"
@@ -99,7 +98,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-4">
               <a
                 href="#"
-                className="text-neutral-400 hover:text-primary-400 
+                className="text-neutral-400 hover:text-blue-400 
                   transition-all duration-300 
                   hover:scale-110 active:scale-90"
                 aria-label="Github Profile"
@@ -108,7 +107,7 @@ export default function HeroSection() {
               </a>
               <a
                 href="#"
-                className="text-neutral-400 hover:text-primary-400 
+                className="text-neutral-400 hover:text-blue-400 
                   transition-all duration-300 
                   hover:scale-110 active:scale-90"
                 aria-label="Instagram Profile"
@@ -117,7 +116,7 @@ export default function HeroSection() {
               </a>
               <a
                 href="#"
-                className="text-neutral-400 hover:text-primary-400 
+                className="text-neutral-400 hover:text-blue-400 
                   transition-all duration-300 
                   hover:scale-110 active:scale-90"
                 aria-label="Download Resume"

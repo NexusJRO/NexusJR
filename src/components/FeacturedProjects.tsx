@@ -43,12 +43,9 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-            Nossos Serviços Principais
+            Nossos{" "}
+            <span className="text-blue-500 animate-text-shimmer">Serviços</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transformando desafios em oportunidades através de soluções
-            tecnológicas inovadoras
-          </p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 mb-12">
