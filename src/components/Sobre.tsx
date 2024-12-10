@@ -21,7 +21,7 @@ export default function NexusJRAboutSection() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Nossa <span className="text-blue-500">Missão</span>
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+              <p className="text-gray-700 text-lg leading-relaxed ">
                 A Nexus JR existe para redefinir o papel da tecnologia nos
                 negócios, criando soluções inovadoras que elevem nossos clientes
                 ao próximo nível de eficiência e competitividade.
@@ -35,7 +35,7 @@ export default function NexusJRAboutSection() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Nossa <span className="text-blue-500">Visão</span>
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+              <p className="text-gray-700 text-lg leading-relaxed">
                 Ser a escolha número um em Moçambique e além, conhecida por
                 transformar ideias em realidades digitais de impacto.
               </p>
