@@ -8,10 +8,7 @@ export default function WelcomeToast() {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Get current hour
     const currentHour = new Date().getHours();
-
-    // Determine greeting based on time of day
     let greeting = "Olá";
     if (currentHour >= 5 && currentHour < 12) {
       greeting = "Bom dia";
@@ -21,13 +18,12 @@ export default function WelcomeToast() {
       greeting = "Boa noite";
     }
 
-    // Show toast automatically when the component mounts
     toast({
       title: `${greeting} à Nexus JR!`,
       description: "Explore nossa jornada de inovação e excelência técnica.",
-      duration: 5000, // Toast will display for 5 seconds
+      duration: 5000,
     });
-  }, []); // Empty dependency array ensures this runs only once on initial render
+  }, [toast]); // Agora inclui 'toast' como dependência
 
   return <Toaster />; // Added back the Toaster component
 }
