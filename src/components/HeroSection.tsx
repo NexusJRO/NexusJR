@@ -64,7 +64,7 @@ export default function HeroSection() {
           {/* Animated Intro */}
           <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
             <span className="w-10 h-1 bg-blue-500 rounded-full"></span>
-            <p className="text-white text-lg tracking-wide">
+            <p className="text-white text-lg tracking-wide text-justify">
               Tech excellence always
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Descriptive Subtext */}
-          <p className="text-neutral-200 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+          <p className="text-neutral-100 text-lg leading-relaxed max-w-xl mx-auto md:mx-0 text-ellipsis">
             Com cada linha de código e cada projeto concluído, reforçamos nosso
             compromisso com a excelência técnica e a inovação contínua.
           </p>
@@ -97,7 +97,7 @@ export default function HeroSection() {
             {/* Social Links with Hover Effects */}
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://github.com/NexusJRO"
                 className="text-neutral-400 hover:text-blue-400 
                   transition-all duration-300 
                   hover:scale-110 active:scale-90"
